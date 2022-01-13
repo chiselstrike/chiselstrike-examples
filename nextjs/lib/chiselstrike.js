@@ -22,6 +22,6 @@ export async function chiselFetch(client, endpoint, opts) {
         if (!opts.headers) opts.headers = {}
         opts.headers.ChiselStrikeToken = client.token;
     }
-    // FIXME: we should use client.backend_url instead of localhost:3000 here, but that currently fails CORS preflight.
+    // FIXME: we should prepend client.backend_url to endpoint, but that currently fails CORS preflight.
     return await fetch(endpoint, opts)
 }
