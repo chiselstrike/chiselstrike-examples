@@ -1,10 +1,10 @@
+import { Chisel } from "@chiselstrike/chiselstrike"
+
 export default async function chisel(req) {
     if (req.method == 'GET') {
         try {
             let resp_json = [];
-            for await (let p of Chisel.Person) {
-                resp_json.push(p);
-            }
+            await Person.all().forEach(p => resp_json.push(p))
             return Chisel.json(resp_json);
         } catch (e) {
             return Chisel.json(e, 500);
