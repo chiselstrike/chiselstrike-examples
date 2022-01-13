@@ -17,7 +17,7 @@ export default function Home({ chisel }) {
   const [peopleData, setPeopleData] = React.useState([])
 
   async function fetch_people() {
-    const res = await chiselFetch(chisel, 'api/get_all_people', {
+    const res = await chiselFetch(chisel, 'dev/get_all_people', {
       method: 'GET',
     });
     const jsonData = await res.json();
@@ -40,7 +40,7 @@ export default function Home({ chisel }) {
 
   const submitPerson = async (event) => {
     event.preventDefault() // don't redirect the page
-    await chiselFetch(chisel, 'api/import_person', {
+    await chiselFetch(chisel, 'dev/import_person', {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
