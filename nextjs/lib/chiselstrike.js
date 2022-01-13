@@ -22,6 +22,5 @@ export async function chiselFetch(client, endpoint, opts) {
         if (!opts.headers) opts.headers = {}
         opts.headers.ChiselStrikeToken = client.token;
     }
-    // FIXME: we should prepend client.backend_url to endpoint, but that currently fails CORS preflight.
-    return await fetch(endpoint, opts)
+    return await fetch(client.backend_url + endpoint, opts)
 }
