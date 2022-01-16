@@ -1,3 +1,5 @@
+// SPDX-FileCopyrightText: © 2021 ChiselStrike <info@chiselstrike.com>
+
 async function getUser(token) {
     if (!token) return null;
     const resp = await fetch(`http://localhost:8080/__chiselstrike/auth/user/${token}`);
