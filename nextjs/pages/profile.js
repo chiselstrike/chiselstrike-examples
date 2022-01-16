@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { getChiselStrikeClient } from "../lib/chiselstrike";
+import { getChiselStrikeClient } from "@chiselstrike/frontend";
 import { withSessionSsr } from "../lib/withSession";
 
 export const getServerSideProps = withSessionSsr(
