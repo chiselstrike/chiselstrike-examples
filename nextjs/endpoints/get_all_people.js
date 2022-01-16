@@ -4,7 +4,7 @@ export default async function chisel(req) {
     if (req.method == 'GET') {
         try {
             let resp_json = [];
-            await Person.all().forEach(p => resp_json.push(p))
+            await Person.cursor().forEach(p => resp_json.push(p))
             return Chisel.json(resp_json);
         } catch (e) {
             return Chisel.json(e, 500);
