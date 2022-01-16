@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import React, {useEffect} from "react";
-import { chiselFetch, getChiselStrikeClient } from "../lib/chiselstrike";
+import { chiselFetch, getChiselStrikeClient } from '@chiselstrike/frontend';
 import { withSessionSsr } from "../lib/withSession";
 
 export const getServerSideProps = withSessionSsr(
