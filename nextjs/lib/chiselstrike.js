@@ -10,7 +10,7 @@ export async function getChiselStrikeClient(session, urlParameters) {
     session.chiselstrikeClient = {
         user: await getUser(token),
         token,
-        loginLink: `https://github.com/login/oauth/authorize?scope=read:user&client_id=${process.env.OAUTH_GHID}`,
+        loginLink: `https://github.com/login/oauth/authorize?scope=read:user&client_id=2d4672c296ae275cd320`,
         backend_url: 'http://localhost:8080/',
     };
     await session.save();
