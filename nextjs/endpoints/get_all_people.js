@@ -9,8 +9,6 @@ export default async function chisel(req) {
         } catch (e) {
             return Chisel.json(e, 500);
         }
-    } else if (req.method == 'OPTIONS') {
-        return new Response('ok');
     }
     return Chisel.json("Only GET is allowed", 405);
 }
