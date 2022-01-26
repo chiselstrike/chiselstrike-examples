@@ -1,13 +1,13 @@
-import { Chisel } from "@chiselstrike/chiselstrike"
+import { responseFromJson } from "@chiselstrike/api"
 
 export default async function chisel(req) {
     if (req.method == 'PUT') {
         try {
             await Person.build(await req.json()).save();
-            return Chisel.json("ok");
+            return responseFromJson("ok");
         } catch (e) {
-            return Chisel.json(e, 500);
+            return responseFromJson(e, 500);
         }
     }
-    return Chisel.json("Only PUT is allowed", 405);
+    return responseFromJson("Only PUT is allowed", 405);
 }
