@@ -1,3 +1,4 @@
 models = ["types"]
 endpoints = ["endpoints"]
 policies = ["policies"]
+modules = "deno"
