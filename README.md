@@ -3,7 +3,7 @@
 Welcome to the repository of ChiselStrike examples!
 
 * [Blog application using Gatsby with ChiselStrike](./gatsby)
-* [Simple application using Next.js with ChiselStrike](./gatsby)
+* [Simple application using Next.js with ChiselStrike](./nextjs)
 * [Todo application using Replicache and ChiselStrike](https://github.com/penberg/replicache-todo)
 * [URL shortener using Gatsby and ChiselStrike](https://github.com/apoorv-on-git/chisel-shortner) by @apoorv-on-git
 
