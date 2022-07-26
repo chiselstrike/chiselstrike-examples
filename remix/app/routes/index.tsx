@@ -62,10 +62,19 @@ export default function Index() {
             </div>
           </div>
         </div>
-
+        <div className="mx-auto mt-16 max-w-7xl text-center">
+          <Link to="/posts" className="text-xl text-blue-600 underline">
+            Blog Posts
+          </Link>
+        </div>
         <div className="mx-auto max-w-7xl py-2 px-4 sm:px-6 lg:px-8">
           <div className="mt-6 flex flex-wrap justify-center gap-8">
             {[
+              {
+                src: "https://www.chiselstrike.com/_next/image?url=%2Flogos%2Fchiselstrike.svg&w=640&q=75",
+                alt: "ChiselStrike",
+                href: "https://chiselstrike.org",
+              },
               {
                 src: "https://user-images.githubusercontent.com/1500684/157764397-ccd8ea10-b8aa-4772-a99b-35de937319e1.svg",
                 alt: "Fly.io",

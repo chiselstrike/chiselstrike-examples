@@ -33,6 +33,18 @@ cp .env.example .env # change values accordingly
 > way to show how ChiselStrike can be used to enhance an existing project. But if you want to convert the existing SQLite
 > code to ChiselStrike and send us a PR, we would obviously consider it!
 
+To initialize the ChiselStrike project, do this at the top level of your Remix directory:
+
+```sh
+npx create-chiselstrike-app chiselstrike
+```
+
+First let's make sure that the Remix `run` command will also start ChiselStrike. Add this to the `scripts` session of your `package.json` file
+
+```json
+    "dev:chiselstrike": "cd chiselstrike; npm run dev",
+```
+
 Now Start the remix dev server:
 
 ```sh
