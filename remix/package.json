@@ -9,6 +9,7 @@
     "dev": "run-p dev:*",
     "dev:css": "npm run generate:css -- --watch",
     "dev:remix": "cross-env NODE_ENV=development binode --require ./mocks -- @remix-run/dev:remix dev",
+    "dev:chiselstrike": "cd chiselstrike; npm run dev",
     "format": "prettier --write .",
     "generate:css": "tailwindcss -o ./app/styles/tailwind.css",
     "lint": "eslint --cache --cache-location ./node_modules/.cache/eslint .",
@@ -36,6 +37,7 @@
     "@remix-run/server-runtime": "^1.6.5",
     "bcryptjs": "^2.4.3",
     "isbot": "^3.5.0",
+    "marked": "^4.0.18",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "tiny-invariant": "^1.2.0"
@@ -51,6 +53,7 @@
     "@testing-library/user-event": "^14.2.3",
     "@types/bcryptjs": "^2.4.2",
     "@types/eslint": "^8.4.5",
+    "@types/marked": "^4.0.3",
     "@types/node": "^18.0.4",
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
